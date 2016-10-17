@@ -1,0 +1,25 @@
+<data-ng-form name="loginForm" class="">
+<div class="container">
+	<!-- data-ng-controller="loginController"> -->
+	<div class="login">
+		<div class="login-pannel">
+			<h3 class="login-heading">SIGN IN</h3>
+			<h4>Username</h4>
+			<div class="form-group">
+				<input type="text" name=userName class="form-control" id="userName"
+					data-ng-model="login.userName" />
+			</div>
+			<h4>Password</h4>
+			<div class="form-group">
+				<input type="password" name="password" class="form-control"
+					id="password" data-ng-model="login.password" />
+			</div>
+			<div class="text-center">
+				<button type="submit" class="btn btn-primery btn-sign"
+					data-ng-click="login()">Next</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+</data-ng-form>

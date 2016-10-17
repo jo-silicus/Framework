@@ -1,0 +1,82 @@
+<form name="form1">
+	<!-- ng-controller="homeController"> -->
+	<div class="relative">
+		<h4 class="heading">Personal Details</h4>
+		<hr width="700">
+		<div class="col-md-12 col-lg-12 col-sm-12 box-theme">
+			<div class="row">
+				<div class="col-md-12 col-lg-12 col-sm-12">
+					<div class="col-md-4 col-lg-4 col-sm-4">
+						<div class="row">
+							<div class="col-md-5 col-lg-5 col-sm-5 col-xs-12">
+								<label>Title</label> <select class="form-control"
+									ng-model="personalInfo.title"
+									ng-options="title for title in titles">
+									<option value="">-Title-</option>
+								</select>
+							</div>
+
+							<div class="col-md-7 col-lg-7 col-sm-7 col-xs-12"">
+
+								<label><span class="error">*</span>First Name</label> <input
+									type="text" class="form-control"
+									ng-model="personalInfo.firstName" name="firstName">
+
+							</div>
+
+							<div class="col-md-4 col-lg-4 col-sm-4">
+
+
+								<label><span class="error">*</span>Last Name</label> <input
+									type="text" class="form-control"
+									ng-model="personalInfo.lastName" name="lastName"
+									required="required" />
+
+								<div class="col-md-4 col-lg-4 col-sm-4">
+
+
+									<label>Email <input type="text" class="form-control"
+										ng-model="personalInfo.email" />
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12 col-lg-12 col-sm-12">
+
+								<div class="col-md-4 col-lg-4 col-sm-4">
+
+									<label><span class="error">*</span>Mobile No</label> <input
+										type="text" ng-model="personalInfo.mobileNumber"
+										class="form-control" name="dob" datepicker
+										placeholder="mm-dd-yyyy" required="required" />
+
+								</div>
+
+								<div class="col-md-4 col-lg-4 col-sm-4">
+
+									<label>User Name </label> <input type="text"
+										class="form-control" ng-model="personalInfo.userName" />
+								</div>
+								<div class="col-md-4 col-lg-4 col-sm-4">
+
+
+									<label>Password </label> <input class="form-control"
+										ng-model="personalInfo.password" />
+
+								</div>
+							</div>
+						</div>
+
+
+
+
+						<p>
+							&nbsp;&nbsp;
+							<button value="submit" ng-click="submit()">submit</button>
+							<button value="reset" ng-click="reset()">reset</button>
+
+						</p>
+					</div>
+				</div>
+</form>
